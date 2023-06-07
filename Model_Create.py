@@ -192,6 +192,7 @@ if __name__ == '__main__':
     pred_test = inv_boxcox(pred_test, l_d[0])
     data_plot = df.iloc[n_day_past+DAY_PAST:df_for_train.shape[0], 0].reset_index()
     data_plot['predict'] = pred_test
+
     f, ax = plt.subplots(figsize=(8, 6))
     s1, = ax.plot(data_plot['date'], data_plot['open'])
     s2, = ax.plot(data_plot['date'], data_plot['predict'])
@@ -214,6 +215,7 @@ if __name__ == '__main__':
     df_pred = pd.DataFrame({'date': pd.to_datetime(pred_days_date), 'predict': y_pred})
     original = df.loc['20220101':, 'open']
     original = original.reset_index()
+
     f, ax = plt.subplots(figsize=(8, 6))
     l1, = ax.plot(original['date'], original['open'])
     l2, = ax.plot(df_pred['date'], df_pred['predict'])
