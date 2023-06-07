@@ -5,7 +5,6 @@
 [![Python](https://img.shields.io/badge/Python-3.9-blue?style=flat&logo=python)]()
 [![Keras](https://img.shields.io/badge/Keras-red?style=flat&logo=Keras)]()
 [![Pandas](https://img.shields.io/badge/Pandas-red?style=flat&logo=pandas)]()
-[![CV2](https://img.shields.io/badge/OpenCV-red?style=flat&logo=opencv)](https://opencv.org/)
 
 </div>
 
@@ -107,5 +106,6 @@ Stock price prediction based on 5 years of price data.
 </tr>
 </tbody></table>    
 
+* Result of predict
 ![image](Graf_Screen/CHART_PREDICT_m3_ep50_n35.png)
 
